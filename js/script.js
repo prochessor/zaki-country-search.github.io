@@ -138,7 +138,7 @@ function getCountryData(country) {
             <div class="country-content">
                 <div class="content-item name">${data.name.common}</div>
                 <div class="content-item region">${data.region}</div>
-                <div class="content-item population">🧑🏻‍🤝‍🧑🏻 <span>${data.population / 100000}M people</span></div>
+                <div class="content-item population">🧑🏻‍🤝‍🧑🏻 <span>${data.population / 1000000}M people</span></div>
                 <div class="content-item language">🏙️ ${data.capital[0]}</div>
                 <div class="content-item language">🔗 ${data.borders}</div>
                 <div class="content-item language">🌐 ${data.subregion}</div>
