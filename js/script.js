@@ -1,13 +1,10 @@
-'use strict';
-
-//XMLHttpRequest
 
 function getCountryData(country, type = 1) {
     let request = new XMLHttpRequest();
     request.open("GET", `https://restcountries.com/v3.1/name/${country}`);
     request.send();
-    let countryContainer = document.querySelector(`.container-${type}`);
     request.addEventListener("load", () => {
+        let countryContainer = document.querySelector(`.container-${type}`);
         let [data] = JSON.parse(request.responseText);
         let html = `
             <div class="country">
