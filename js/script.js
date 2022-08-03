@@ -17,7 +17,7 @@ function getCountryData(country, type = 1) {
                 <div class="content-item language">🔗 ${data.borders}</div>
                 <div class="content-item language">🌐 ${data.subregion}</div>
                 <div class="content-item language">💸 ${data.currencies[`${Object.keys(data.currencies)[0]}`].name}</div>
-                <div class="content-item currency">🗣️  ${data.languages[`${Object.keys(data.languages)[0] }`] }</div>
+                <div class="content-item currency">🗣️  ${Object.values(data.languages)}</div>
             </div>
         </div>
         `;
