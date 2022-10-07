@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 229, 255, 0.564), rgb(0, 82, 82));
+    font-family: cursive;
+}
+
+.country-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.country {
+    box-sizing: border-box;
+    width: 350px;
+    min-height: 550px;
+    background-color: #222;
+    border-radius: 10px;
+    color: teal;
+    overflow: hidden;
+}
+
+.country img {
+    width: 100%;
+    height: 40%;
+}
+
+.country-content {
+    padding: 10px 30px 30px 30px;
+}
+
+.country .name {
+    font-size: 40px;
+    color: rgba(0, 255, 255, 0.507);
+    font-weight: 700;
+
+}
+
+.country .region {
+    font-size: 25px;
+}
+
+.content-item {
+    padding: 6px 0px 6px 0px;
+    font-size: 18px;
+}
+
+.country .population span {
+    word-spacing: normal;
+}
+
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.495);
+    font-family: inherit;
+
+}
+
+.search-bar button {
+    padding: 5px 15px 5px 15px;
+    color: rgb(0, 69, 69);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.495);
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+.search-bar button:hover {
+    transform: scale(1.2);
+}
